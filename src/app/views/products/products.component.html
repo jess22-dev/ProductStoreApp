@@ -1,0 +1,11 @@
+<mat-card>
+    <mat-card-title>Productos</mat-card-title>
+    <mat-card-content>
+      <mat-card *ngFor="let producto of productos">
+        <img [src]="producto.imagen" alt="{{ producto.nombre }}">
+        <h2>{{ producto.nombre }}</h2>
+        <p>Precio: ${{ producto.precio }}</p>
+      </mat-card>
+      <button mat-raised-button color="primary" routerLink="/products-details">Ver detalle de productos</button>
+    </mat-card-content>
+  </mat-card>

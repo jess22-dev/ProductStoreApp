@@ -1,0 +1,12 @@
+<mat-card *ngFor="let item of carrito">
+  <img [src]="item.imagen" alt="Imagen del producto" style="width: 100px; height: auto;">
+  <h3>{{ item.titulo }}</h3>
+  <p>Precio: ${{ item.precio }}</p>
+</mat-card>
+<mat-card>
+
+    <button mat-raised-button color="primary" (click)="Pagar()">
+      Pagar
+    </button>
+  
+</mat-card>

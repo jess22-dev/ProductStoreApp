@@ -1,0 +1,14 @@
+<mat-card>
+    <mat-card-title>Detalles del Producto</mat-card-title>
+    <mat-card-content>
+      <h2>{{ producto.nombre }}</h2>
+      <p>{{ producto.descripcion }}</p>
+      <p>Precio: ${{ producto.precio }}</p>  
+      <img src="./assets/images/audifonos.jpg" style="width: 100px; height: auto;">
+      <div class="mt-3">
+        <button mat-raised-button color="primary" (click)="agregarAlcarrito()">
+          Agregar al carrito 
+        </button>
+      </div>
+    </mat-card-content>
+  </mat-card>
